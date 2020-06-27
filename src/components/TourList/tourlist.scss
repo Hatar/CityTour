@@ -1,0 +1,18 @@
+@import '../../App.scss';
+.tourlist{
+  width: 1127px;
+  margin:30px auto;
+  padding: 10px 30px;
+}
+.voidData{
+  text-align: center;
+  background-color: $mainGreen;
+  color:$mainWhite;
+  padding: 20px 40px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  font-size: 25px;
+  letter-spacing: .8px;
+  font-weight: 600px;
+}

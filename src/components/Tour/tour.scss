@@ -1,0 +1,64 @@
+@import '../../App.scss';
+.tour{
+  background-color: $mainGray;
+  margin: 2rem 0;
+  img{
+    width: 100%;
+    display: block;
+    min-height: 13rem;
+  }
+}
+
+@media screen and (min-width:768px){
+  .tour{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-column-gap:30px
+  }
+}
+.img-container{
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  .close-btn{
+    position: absolute;
+    display: block;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+    opacity: 0;
+    transition: all .5s linear;
+    i{
+      font-size: 17px;
+      color: $mainWhite;
+    }
+  }
+  &:hover .close-btn{
+    opacity: 1;
+  }
+}
+.tour-info{
+  padding: 30px 0;
+  h3,h4,h5{
+    font-size: 18px;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    line-height: 1.7;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  h4{
+    margin-bottom: 20px;
+  }
+  h5 i{
+    font-size: 15px;
+  }
+  p{
+    letter-spacing: .4px;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 14px 0 0 0;
+    font-style: italic;
+  }
+}
+

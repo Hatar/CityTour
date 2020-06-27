@@ -1,0 +1,36 @@
+@import '../../App.scss';
+.container{
+  padding-right: 30px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Begin Navbar */
+.navbar{
+  background-color: $mainBlack;
+  padding:20px 0;
+  overflow: hidden;
+  .nav-links{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    .nav-link{
+      text-decoration: none;
+      color: $mainWhite;
+      padding: 0 20px;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: .8px;
+      transition: all .6s linear;
+      &:hover{
+        color: $mainGreen;
+      }
+    }
+    .nav-link.active{
+      color: $mainGreen;
+    }
+  }
+}
+/* End Navbar */
